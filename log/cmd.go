@@ -20,3 +20,7 @@ func Clear() {
 	cmd.Stdout = os.Stdout
 	cmd.Run()
 }
+
+func SwitchDebug(do bool) {
+	DEBUG = do
+}

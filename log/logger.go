@@ -11,6 +11,9 @@ func New(out io.Writer) *Logger {
 // - Methods
 
 func Debug(msg string, params ...string) {
+	if !DEBUG {
+		return
+	}
 	print("DEBUG", msg, COLOR_GREEN, params)
 }
 
